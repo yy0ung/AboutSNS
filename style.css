@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#grid ul{
+  
+  padding-top:6px;
+  list-style-type:square;
+  border-right:3px grey solid;
+  margin-right: 20px;
+
+}
+#grid{
+  display:grid;
+  grid-template-columns:170px 1fr;
+
+
+}
+#grid #a{
+  padding-left:3px;
+}
+#grid img{
+  margin-top:10px;
+  margin-bottom:10px;
+
+}
+#night_Day{
+  display:block;
+  margin-left:auto;
+  background-color:'powderblue';
+
+}

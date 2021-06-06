@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Twitter</title>
+  <meta charset="utf-8">
+</head>
+<link rel= "stylesheet" href="style.css">
+<script>
+  function getnightDay(self){
+    var word = document.querySelector('body');
+
+    if(self.value==='night'){
+      word.style.backgroundColor='black';
+      word.style.color='white';
+      self.value='day';
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+      alist[i].style.color='powderblue'; i=i+1;}
+
+    }else{
+      word.style.backgroundColor='white';
+      word.style.color='black';
+      self.value='night';
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+      alist[i].style.color='blue'; i=i+1;}
+
+    }
+
+  }
+</script>
+<body>
+  <h1><a href="home.html">About SNS</a></h1>
+    <input id= "night_Day" type="button" value="night" onclick="getnightDay(this)
+
+    ">
+    <div id="grid">
+    <ul>
+      <li><a href="Fb.html">Facebook</a></li>
+      <li><a href="In.html">Instagram</a></li>
+      <li><a href="YT.html">YouTube</a></li>
+      <li><a href="Tw.html">Twitter</a></li>
+    </ul>
+
+
+
+    <div id="a"><p>Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets". Registered users can post, like, and retweet tweets, but unregistered users can only read them. Users access Twitter through its website interface or its mobile-device application software ("app"), though the service could also be accessed via SMS before April 2020. Twitter, Inc. is based in San Francisco, California, and has more than 25 offices around the world.
+    <img src="twitter.jpg" width = 100%>
+    <br> Tweets were originally restricted to 140 characters, but the limit was doubled to 280 for non-CJK languages in November 2017.[15] Audio and video tweets remain limited to 140 seconds for most accounts.Twitter was created by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams in March 2006 and launched in July of that year. By 2012, more than 100 million users posted 340 million tweets a day,and the service handled an average of 1.6 billion search queries per day. </p></div></div>
+
+
+
+</body>
+
+</html>

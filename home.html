@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>About SNS</title>
+  <meta charset="utf-8">
+</head>
+<link rel= "stylesheet" href="style.css">
+<script>
+  function getnightDay(self){
+    var word = document.querySelector('body');
+
+    if(self.value==='night'){
+      word.style.backgroundColor='black';
+      word.style.color='white';
+      self.value='day';
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+      alist[i].style.color='#dfd1ef'; i=i+1;}
+
+    }else{
+      word.style.backgroundColor='white';
+      word.style.color='black';
+      self.value='night';
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+      alist[i].style.color='#9918ce'; i=i+1;}
+
+
+    }
+
+  }
+</script>
+
+
+<body>
+  <h1><a href="home.html">About SNS</a></h1>
+    <input id= "night_Day" type="button" value="night" onclick="getnightDay(this)
+
+    ">
+    <div id="grid">
+    <ul>
+      <li><a href="Fb.html">Facebook</a></li>
+      <li><a href="In.html">Instagram</a></li>
+      <li><a href="YT.html">YouTube</a></li>
+      <li><a href="Tw.html">Twitter</a></li>
+    </ul>
+
+
+
+    <div id="a"><p><strong>social networking service</strong> (also social networking site or social media) is an online platform which people use to build social networks or social relationships with other people who share similar personal or career interests, activities, backgrounds or real-life connections.
+    <img src="sns.jpg" width = 100%>
+    <br>Social networking services vary in format and the number of features. They can incorporate a range of new information and communication tools, operating on desktops and on laptops, on mobile devices such as tablet computers and smartphones. They may feature digital photo/video/sharing and diary entries online (blogging).[2] Online community services are sometimes considered social-network services by developers and users, though in a broader sense, a social-network service usually provides an individual-centered service whereas online community services are group-centered. Defined as "websites that facilitate the building of a network of contacts in order to exchange various types of content online," social networking sites provide a space for interaction to continue beyond in person interactions. These computer mediated interactions link members of various networks and may help to both maintain and develop new social and professional relationships.</p></div></div>
+
+
+
+</body>
+
+</html>
